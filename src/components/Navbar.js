@@ -1,13 +1,25 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiHeartsLine } from "react-icons/ri";
+import { Button } from "./Button";
+import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const [button, setButton] = useState(true);
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -40,10 +52,9 @@ function Navbar() {
                 </Link>
               ) : (
                 <Link to="/contact" className="btn-link">
-                  <Button
-                    buttonStyle="btn--outline"
-                    buttonSize="btn--mobile"
-                  ></Button>
+                  <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
+                    Contact
+                  </Button>
                 </Link>
               )}
             </li>
