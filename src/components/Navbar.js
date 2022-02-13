@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiHeartsLine } from "react-icons/ri";
+import { IconContext } from "react-icons/lib";
 import { Button } from "./Button";
 import "./Navbar.css";
 
@@ -19,48 +20,62 @@ function Navbar() {
     }
   };
 
+  useEffect(() => {
+    showButton();
+  }, []);
+
   window.addEventListener("resize", showButton);
 
   return (
     <>
-      <div className="navbar">
-        <div className="navbar-container container">
-          <Link to="/" className="navbar-logo">
-            {" "}
-            <RiHeartsLine className="navbar-icon" />
-            Date Ideas
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-links">
-                About
-              </Link>
-            </li>
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <div className="navbar">
+          <div className="navbar-container container">
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              {" "}
+              <RiHeartsLine className="navbar-icon" />
+              Date Ideas
+            </Link>
+            <div className="menu-icon" onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </div>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/about"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  About
+                </Link>
+              </li>
 
-            <li className="nav-btn">
-              {button ? (
-                <Link to="/contact" className="btn-link">
-                  <Button buttonStyle="btn--outline"></Button>
-                </Link>
-              ) : (
-                <Link to="/contact" className="btn-link">
-                  <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                    Contact
-                  </Button>
-                </Link>
-              )}
-            </li>
-          </ul>
+              <li className="nav-btn">
+                {button ? (
+                  <Link to="/contact" className="btn-link">
+                    <Button buttonStyle="btn--outline">Contact</Button>
+                  </Link>
+                ) : (
+                  <Link to="/contact" className="btn-link">
+                    <Button
+                      buttonStyle="btn--outline"
+                      buttonSize="btn--mobile"
+                      onClick={closeMobileMenu}
+                    >
+                      Contact
+                    </Button>
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </IconContext.Provider>
     </>
   );
 }
