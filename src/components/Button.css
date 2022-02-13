@@ -73,9 +73,9 @@
   transition: all 0.2s ease-out;
 }
 
-.blue {
-  background-color: #276afb;
-  color: #fff;
+.white {
+  background-color: #fff;
+  color: #f12e90;
   border: none;
 }
 
