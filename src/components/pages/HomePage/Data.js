@@ -8,7 +8,7 @@ export const homeObjOne = {
     "Use this date idea generator to decide the activity of your next date. Loaded with 10+ ideas.",
   buttonLabel: "",
   imgStart: "",
-  img: "",
+  img: "./images/couple-date-night.svg",
   alt: "Image goes here.",
   hasLink: false,
   link: "",
