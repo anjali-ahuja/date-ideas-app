@@ -11,12 +11,6 @@
   white-space: nowrap;
 }
 
-.btn--primary {
-  background-color: var(--primary);
-  color: #fff;
-  border: 1px solid var(--primary);
-}
-
 .btn--outline {
   background-color: transparent;
   color: #fff;
@@ -96,16 +90,16 @@
   border: none;
 }
 
-.primary {
+.btn--primary {
   background-color: #f12e90;
   color: #fff;
   border: none;
 }
 
-.primary:hover {
-  background-color: #fff;
-  color: #f12e90;
-  border: none;
+.btn--primary:hover {
+  background-color: #f12e90;
+  color: #ffde83;
+  box-shadow: 0 0 4px 0 #000;
 }
 
 .btn--link {

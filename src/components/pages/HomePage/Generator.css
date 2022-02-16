@@ -1,5 +1,6 @@
 .generator-section {
-  padding: 160px 0;
+  padding: 140px 0;
+  background-color: #fff;
 }
 
 .generator-row {
@@ -16,21 +17,34 @@
 }
 
 .col {
-  top: 40px;
-  margin-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
   flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
 }
 
-.generator-text-wrapper {
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.light {
-  background-color: #fff;
+.top-line {
+  color: #f12e90;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 }
