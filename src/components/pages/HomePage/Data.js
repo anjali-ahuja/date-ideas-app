@@ -1,5 +1,5 @@
 export const homeObjOne = {
-  lightBg: false,
+  lightBg: true,
   lightText: true,
   lightTextDesc: true,
   topLine: "Love is in the Air...",

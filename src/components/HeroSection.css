@@ -1,6 +1,7 @@
 .home__hero-section {
   padding-bottom: 30px;
   padding-top: 100px;
+  background-color: #ffde83;
 }
 
 .home__hero-row {
@@ -49,8 +50,8 @@
   color: #f12e90;
 }
 
-.dark {
-  background-color: #ffde83;
+.light {
+  background-color: ;
 }
 
 .home__hero-subtitle {
