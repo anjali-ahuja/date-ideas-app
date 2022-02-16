@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../../HeroSection";
-import { homeObjOne, dateIdeas } from "./Data";
+import { homeObjOne } from "./Data";
 import Generator from "./Generator";
 
 function Home() {

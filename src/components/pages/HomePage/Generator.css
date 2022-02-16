@@ -1,6 +1,6 @@
 .generator-section {
   padding: 140px 0;
-  background-color: #fff;
+  background-color: #f0b0e0;
 }
 
 .generator-row {
@@ -9,18 +9,20 @@
 
 .row {
   display: flex;
-  margin-right: -15px;
-  margin-bottom: -15px;
-  margin-left: -15px;
   flex-wrap: wrap;
   align-content: stretch;
 }
 
 .col {
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
   flex: 1;
 }
 
 .btn-wrapper {
+  max-width: 540px;
   display: flex;
   justify-content: center;
 }
@@ -33,6 +35,14 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #f12e90;
 }
 
 @media screen and (max-width: 991px) {

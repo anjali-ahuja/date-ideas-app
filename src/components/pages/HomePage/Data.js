@@ -63,7 +63,7 @@ export const dateIdeas = [
   "solve a 1000 piece puzzle 🧩",
   "compare your zodiac birth charts ♑🔍",
   "play a game of scrabble Ⓜ️",
-  "go for an helicopter ride over a city 🚁",
+  "go for an helicopter ride over the city 🚁",
   "go snorkelling or scuba diving 🤿",
   "go camping ⛺",
   "have a spa night 💆",

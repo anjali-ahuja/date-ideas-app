@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../../Button";
+import { dateIdeas } from "./Data";
 import "./Generator.css";
 
 function Generator() {
@@ -30,6 +31,11 @@ function Generator() {
           </div>
           <div className="col">
             <div className="top-line">You should... </div>
+            <h1 className="heading">
+              {click
+                ? dateIdeas[Math.floor(Math.random() * dateIdeas.length)]
+                : "hit the generate button!"}
+            </h1>
           </div>
         </div>
       </div>
