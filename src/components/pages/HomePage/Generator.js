@@ -39,10 +39,12 @@ function Generator() {
             </div>
           </div>
           <div className="col">
-            <div className="top-line">You should... </div>
-            <h1 className="heading">
-              {click ? idea : "hit the generate button!"}
-            </h1>
+            <div className="idea-wrapper">
+              <div className="top-line">You should... </div>
+              <h1 className="heading">
+                {click ? idea : "hit the generate button!"}
+              </h1>
+            </div>
           </div>
         </div>
       </div>
