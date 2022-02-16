@@ -46,7 +46,7 @@ export const dateIdeas = [
   "rent a jetski or two 🌊",
   "attempt to draw portraits of each other ✏️",
   "photograph each other (but like in a romantic and loving way) 📷🥺",
-  "dress up in each others clothes 🤔",
+  "dress up in each others outfits 🤔",
   "go out to a sports game 🎾⚽",
   "go to a concert 🎵",
   "stay in, watch TV, order your favorite food and enjoy a cuddlefest 😴🍕",
