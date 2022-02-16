@@ -41,6 +41,11 @@
   font-size: 20px;
 }
 
+.btn--xlarge {
+  padding: 20px 40px;
+  font-size: 30px;
+}
+
 .btn--mobile {
   text-align: center;
   border-radius: 4px;
