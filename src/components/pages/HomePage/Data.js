@@ -1,7 +1,7 @@
 export const homeObjOne = {
   lightBg: true,
-  lightText: true,
-  lightTextDesc: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "Love is in the Air...",
   headline: "and so is Spontaneity!",
   description:
