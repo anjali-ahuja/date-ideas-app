@@ -4,11 +4,11 @@ import "./Footer.css";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import {
-  FaFacebook,
   FaInstagram,
-  FaYoutube,
-  FaTwitter,
+  FaGithub,
   FaLinkedin,
+  FaHackerrank,
+  FaKaggle,
 } from "react-icons/fa";
 import { MdFingerprint } from "react-icons/md";
 
@@ -27,45 +27,40 @@ function Footer() {
           <div className="social-icons">
             <Link
               className="social-icon-link"
-              to="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <FaFacebook />
-            </Link>
-            <Link
-              className="social-icon-link"
-              to="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <FaInstagram />
-            </Link>
-            <Link
-              className="social-icon-link"
-              to={
-                "//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
-              }
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <FaYoutube />
-            </Link>
-            <Link
-              className="social-icon-link"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
-            </Link>
-            <Link
-              className="social-icon-link"
-              to="/"
-              target="_blank"
+              to="//www.linkedin.com/in/anjali-manoj-ahuja/"
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
+            </Link>
+            <Link
+              className="social-icon-link"
+              to="//github.com/anjali-ahuja"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </Link>
+
+            <Link
+              className="social-icon-link"
+              to="//www.hackerrank.com/anjali_manoj_ah1"
+              aria-label="Hackerrank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaHackerrank />
+            </Link>
+            <Link
+              className="social-icon-link"
+              to="//www.kaggle.com/anjiml"
+              aria-label="Kaggle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaKaggle />
             </Link>
           </div>
         </div>
