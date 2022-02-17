@@ -16,6 +16,7 @@ function HeroSection({
   imgStart,
   hasLink,
   link,
+  isPurple,
 }) {
   return (
     <>
