@@ -1,7 +1,6 @@
 .home__hero-section {
   padding-bottom: 30px;
   padding-top: 100px;
-  background-color: #ffde83;
 }
 
 .home__hero-row {
@@ -33,7 +32,6 @@
 }
 
 .top-line {
-  color: #f12e90;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -47,11 +45,30 @@
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: #f12e90;
+}
+
+.purple {
+  background-color: #f0b0e0;
 }
 
 .light {
-  background-color: ;
+  background-color: #ffde83;
+}
+
+.dark {
+  background-color: #f12e90;
+}
+
+.yellow-text {
+  color: #ffde83;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.pink-text {
+  color: #f12e90;
 }
 
 .home__hero-subtitle {

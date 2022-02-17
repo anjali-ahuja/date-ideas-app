@@ -21,7 +21,13 @@ function HeroSection({
   return (
     <>
       <div
-        className={lightBg ? "home__hero-section" : "home__hero-section dark"}
+        className={
+          isPurple
+            ? "home__hero-section purple"
+            : lightBg
+            ? "home__hero-section light"
+            : "home__hero-section dark"
+        }
       >
         {" "}
         <div className="container">
@@ -34,19 +40,21 @@ function HeroSection({
           >
             <div className="col">
               <div className="home__hero-text-wrapper">
-                <div className="top-line">{topLine}</div>
-                <h1 className={lightText ? "heading" : "heading dark"}>
-                  {headline}
-                </h1>
-                <p
+                <div
                   className={
-                    lightTextDesc
-                      ? "home__hero-subtitle"
-                      : "home__hero-subtitle dark"
+                    lightText ? "yellow-text top-line" : "top-line pink-text"
                   }
                 >
-                  {description}
-                </p>
+                  {topLine}
+                </div>
+                <h1
+                  className={
+                    lightText ? "yellow-text heading" : "heading pink-text"
+                  }
+                >
+                  {headline}
+                </h1>
+                <p className="home__hero-subtitle ">{description}</p>
                 {hasLink ? (
                   <Link to={link}>
                     <Button
