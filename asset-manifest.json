@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/date-ideas-app/static/css/main.a1154fd1.css",
-    "main.js": "/date-ideas-app/static/js/main.839431da.js",
+    "main.js": "/date-ideas-app/static/js/main.7baaf796.js",
     "static/js/787.9a6c94ff.chunk.js": "/date-ideas-app/static/js/787.9a6c94ff.chunk.js",
     "index.html": "/date-ideas-app/index.html",
     "main.a1154fd1.css.map": "/date-ideas-app/static/css/main.a1154fd1.css.map",
-    "main.839431da.js.map": "/date-ideas-app/static/js/main.839431da.js.map",
+    "main.7baaf796.js.map": "/date-ideas-app/static/js/main.7baaf796.js.map",
     "787.9a6c94ff.chunk.js.map": "/date-ideas-app/static/js/787.9a6c94ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1154fd1.css",
-    "static/js/main.839431da.js"
+    "static/js/main.7baaf796.js"
   ]
 }
