@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/date-ideas-app/" element={<Home />} />
-        <Route exact path="date-ideas-app/about" element={<About />} />
-        <Route exact path="date-ideas-app/contact" element={<Contact />} />
+        <Route exact path="/date-ideas-app/about" element={<About />} />
+        <Route exact path="/date-ideas-app/contact" element={<Contact />} />
       </Routes>
       <Routes></Routes>
       <Footer />
