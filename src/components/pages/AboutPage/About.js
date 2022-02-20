@@ -11,9 +11,6 @@ function About() {
   return (
     <div>
       <HeroSection {...aboutObjOne} />
-      <HeroSection {...aboutObjTwo} />
-      <HeroSection {...aboutObjThree} />
-      <HeroSection {...aboutObjFour} />
     </div>
   );
 }
