@@ -21,10 +21,10 @@ export const contactObjTwo = {
   topLine: "How to reach me",
   headline: "My preferred channel of contact is LinkedIn.",
   description:
-    "I am planning to be more active on GitHub, Hackerrank, and Kaggle. In the meantime, don't be shy and reach out to me on LinkedIn",
+    "I am planning to be more active on GitHub, Hackerrank, and Kaggle. In the meantime, don't be shy and reach out to me on LinkedIn.",
   buttonLabel: "My LinkedIn",
   imgStart: "",
-  img: "",
+  img: "./images/celebration.svg",
   alt: "image goes here.",
   hasLink: true,
   link: "//www.linkedin.com/in/anjali-manoj-ahuja/",
