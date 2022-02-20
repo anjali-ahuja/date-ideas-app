@@ -56,7 +56,7 @@ function HeroSection({
                 </h1>
                 <p className="home__hero-subtitle ">{description}</p>
                 {hasLink ? (
-                  <Link to={link} rel="noopener noreferrer">
+                  <Link target="_blank" to={link} rel="noopener noreferrer">
                     <Button
                       buttonSize="btn--wide"
                       buttonColor={lightBg ? "primary" : "white"}
