@@ -31,7 +31,11 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar">
           <div className="navbar-container container">
-            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <Link
+              to="/date-ideas-app/"
+              className="navbar-logo"
+              onClick={closeMobileMenu}
+            >
               {" "}
               <RiHeartsLine className="navbar-icon" />
               Date Ideas
