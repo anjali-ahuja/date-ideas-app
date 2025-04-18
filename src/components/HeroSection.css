@@ -1,6 +1,10 @@
 .home__hero-section {
   padding-bottom: 30px;
   padding-top: 100px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 160px); /* tweak based on your navbar+footer height */
 }
 
 .home__hero-row {
